@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.dyslexiagame.fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_lettersFragment"
+            app:destination="@id/lettersFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_colorsFragment"
+            app:destination="@id/colorsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_numbersFragment"
+            app:destination="@id/numbersFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/lettersFragment"
+        android:name="com.example.dyslexiagame.fragments.LettersFragment"
+        android:label="fragment_letters"
+        tools:layout="@layout/fragment_letters_layout" />
+    <fragment
+        android:id="@+id/numbersFragment"
+        android:name="com.example.dyslexiagame.fragments.NumbersFragment"
+        android:label="fragment_numbers"
+        tools:layout="@layout/fragment_numbers_layout" />
+    <fragment
+        android:id="@+id/colorsFragment"
+        android:name="com.example.dyslexiagame.fragments.ColorsFragment"
+        android:label="fragment_colors"
+        tools:layout="@layout/fragment_colors_layout" />
+</navigation>

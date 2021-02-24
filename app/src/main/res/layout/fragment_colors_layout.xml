@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_main_transparent"
+    tools:context=".fragments.ColorsFragment">
+
+        <TextView
+            android:id="@+id/overviewText"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:gravity="start"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0.5"
+            android:text="fragmento de colores"
+            android:textColor="@color/color_main_medium"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp" />
+
+
+</androidx.core.widget.NestedScrollView>
